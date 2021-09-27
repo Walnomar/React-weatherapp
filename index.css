@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+.displayName {
+  text-shadow: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.displayDesc {
+  text-shadow: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.displayTemp {
+  text-shadow: black;
+  font-weight: bolder;
+  font-size: 55px;
+
+}
+.displayWind {
+  text-shadow: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.displayIcon {
+  size:'50px'
+}
+
+.button{
+  margin: 10px;
+  background-color: #5589c0;
+}
