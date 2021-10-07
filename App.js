@@ -45,6 +45,7 @@ function App() {
       <Header style = {{paddingTop:'50px', paddingBottom:'50px'}}>
         <Input
           placeholder="Enter your location"
+          //asetetaan arvo, jonka perusteella haetaan säätietoa
           onChange={e => setQuery(e.target.value)}
         />
         <Button
