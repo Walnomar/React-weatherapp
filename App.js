@@ -7,6 +7,7 @@ import {
   Container
 } from 'semantic-ui-react';
 
+//luodaan muuttujat key ja base, joita käytetään haettassa säätietoja
 const api = {
   key: '5ec0e056f3582bc36735bf5902f3d099',
   base: 'https://api.openweathermap.org/data/2.5/'
@@ -17,10 +18,12 @@ function App() {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
     
+  //funktiolla noudetaan säätiedot avoimesta lähteestä ja asetetaan ne hookkeihin
   function getWeather () {
     fetch (`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
     .then(res => res.json())
     .then(result => {
+      //Kutsutaan aijemmin luotua hookkia, johon on asetettu säätietoa
       setWeather(result)
       setQuery('')
       console.log(result)
@@ -47,6 +50,7 @@ function App() {
           className='button'
           style = {{marginLeft: '10px', background: '#5589c0'}}
           type='submit'
+          //napin painalluksella kutsutaan funktiota, joka noutaa säätiedot
           onClick={getWeather}
           >
             Search...
