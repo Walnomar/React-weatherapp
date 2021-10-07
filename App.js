@@ -26,6 +26,7 @@ function App() {
     .then(result => {
       //Kutsutaan aijemmin luodun muuttujan toimintoa, joka tuo uuden säätiedon
       setWeather(result)
+      //Kutsutaan toimintoa, joka tuo säätiedot halutusta kaupungista
       setQuery('')
       console.log(result)
     })
