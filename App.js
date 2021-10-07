@@ -14,17 +14,17 @@ const api = {
 }
 
 function App() {
-  //luodaan hookit ja niille asetetaan tila(query) ja toiminnallisuus(setQuery), joka päivittää tilan
-  // hookit ovat jätetty tyhjäksi, jotta noudetut arvot voidaan asettaa niihin
+  //luodaan muuttujat ja niille asetetaan tila(query) ja toiminnallisuus(setQuery), joka päivittää tilan
+  //muuttujien arvot ovat jätetty tyhjäksi, jotta noudetut arvot voidaan asettaa niihin
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
     
-  //funktiolla noudetaan säätiedot avoimesta lähteestä ja asetetaan ne hookkeihin
+  //funktiolla noudetaan säätiedot avoimesta lähteestä ja asetetaan ne luotuihin muuttujiin
   function getWeather () {
     fetch (`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
     .then(res => res.json())
     .then(result => {
-      //Kutsutaan aijemmin luotua hookkia, johon on asetettu säätietoa
+      //Kutsutaan aijemmin luodun muuttujan toimintoa, joka tuo uuden säätiedon
       setWeather(result)
       setQuery('')
       console.log(result)
