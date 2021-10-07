@@ -13,6 +13,7 @@ const api = {
 }
 
 function App() {
+  //luodaan hookit ja niille asetetaan tila ja toiminnallisuus, jolla tila päivittyy
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
     
