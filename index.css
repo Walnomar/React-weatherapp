@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.photo {
+  background-image:url('warmweather.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  max-zoom: 200px;
+}
+
+input {
+  border-radius: 7px;
+  border: none;
+  height: 45px;
+  width: 341px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  opacity: 0.5;
+}
+
+.page {
+  margin: auto;
+  padding: 45px;
+  height: 600px;
+  width: 430px;
+  margin-left:'350';
+  text-align: center;
+  border-radius: 7px;
+}
+
+.results {
+  background-color: black;
+  height: 450px;
+  border-radius: 7px;
+  opacity: 0.60;
+  visibility: visible;
+}
+
+.button {
+  margin-top: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 50;
+  background-color: rgb(200, 194, 236);
+  box-shadow: 3px 3px 20px;
+  opacity: 0.45;
+}
+
+button:hover {
+  box-shadow: 3px 3px 20px;
+  cursor: pointer;
+  opacity:0.5;
+  color: white;
+  background-color: black;
+}
+
+button:focus {
+  box-shadow: 3px 3px 20px;
+}
+
+.displayName {
+  text-shadow: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+  color:white;
+}
+.displayDesc {
+  text-shadow: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+  color:white;
+}
+.displayTemp {
+  text-shadow: black;
+  font-weight: bolder;
+  font-size: 55px;
+  color:white;
+}
+.displayWind {
+  text-shadow: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+  color:white;
+}
+
+.displayIcon {
+  size:'50px';
+}
+
+div.results .icon {
+  border-radius: 7px;
+}
